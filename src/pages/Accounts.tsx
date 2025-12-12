@@ -96,7 +96,7 @@ const invoicesSent = [
 
 function Accounts() {
   return (
-    <div className="grid grid-cols-1 justify-between sm:grid-cols-4 auto-rows-auto gap-x-[25px] xxl:gap-x-[30px] gap-y-[24px] xxl:gap-[60px] xxl:max-w-[1171px] xxl:mx-auto">
+    <div className="grid grid-cols-1 justify-between sm:grid-cols-4 auto-rows-auto gap-x-[25px] xxl:gap-x-[30px] gap-y-6gap-[60px] xxl:max-w-[1171px] xxl:mx-auto">
       {/* Summary Cards */}
       <div className="flex justify-between flex-wrap md:flex-nowrap gap-[15px] md:gap-x-[25px] col-span-4 md:max-w-[750px] lg:max-w-[1100px] xl:max-w-[1110px]">
         <SummaryCard title="My Balance" value="$12,750" Icon={Balance} />
@@ -106,12 +106,12 @@ function Accounts() {
       </div>
 
       {/* Last Transaction and My Card Row */}
-      <div className="grid gap-y-[22px] grid-cols-1 md:grid-cols-3 col-span-4 sm:gap-x-[20px] md:gap-x-[25px] xl:gap-x-[30px]">
+      <div className="grid gap-y-[22px] grid-cols-1 md:grid-cols-3 col-span-4 sm:gap-x-5 md:gap-x-[25px] xl:gap-x-[30px]">
         {/* Last Transaction */}
         <div className="md:col-span-2">
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-5">
             <CardsHeader>Recent Transaction</CardsHeader>
-            <div className="bg-white rounded-[25px] px-[15px] py-[18px] xxl:py-[25px] xxl:pl-[25px] xxl:pr-[24px]">
+            <div className="bg-white rounded-[25px] px-[15px] py-[18px] xxl:py-[25px] xxl:pl-[25px] xxl:pr-6">
               {lastTransactions.map((transaction) => (
                 <TransactionsCard
                   key={transaction.id}
@@ -128,7 +128,7 @@ function Accounts() {
                   }
                   moneyValue={transaction.amount}
                   highlightAmount={true}
-                  className="mb-[12px] md:mb-[10px]"
+                  className="mb-3 md:mb-2.5"
                   iconSize="w-[40px] h-[40px] xxl:w-[55px] xxl:h-[55px]"
                   textSize="text-[12px] xxl:text-[16px]"
                 />
@@ -138,7 +138,7 @@ function Accounts() {
         </div>
         {/* My Card */}
         <div className="md:col-span-1">
-          <div className="flex justify-between items-center mb-[20px] h-[27px]">
+          <div className="flex justify-between items-center mb-5 h-[27px]">
             <CardsHeader>My Cards</CardsHeader>
             <CardsLink>See All</CardsLink>
           </div>
@@ -157,7 +157,7 @@ function Accounts() {
 
         {/* Debit & Credit Overview */}
         <div className="md:col-span-2">
-          <div className="flex justify-between items-center mb-[20px] h-[27px]">
+          <div className="flex justify-between items-center mb-5 h-[27px]">
             <CardsHeader>Debit & Credit Overview</CardsHeader>
           </div>
           <MultiBarChart
@@ -173,11 +173,11 @@ function Accounts() {
 
         {/* Invoices Sent */}
         <div className="md:col-span-1">
-          <div className="flex justify-between items-center mb-[20px] h-[27px]">
+          <div className="flex justify-between items-center mb-5 h-[27px]">
             <CardsHeader>Invoices Sent</CardsHeader>
           </div>
 
-          <div className="bg-white rounded-[25px] flex flex-col justify-between w-full max-w-[350px] h-full max-h-[364px] px-[15px] py-[18px] xl:py-[25px] xl:pl-[25px] xl:pr-[24px] md:overflow-y-auto">
+          <div className="bg-white rounded-[25px] flex flex-col justify-between w-full max-w-[350px] h-full max-h-[364px] px-[15px] py-[18px] xl:py-[25px] xl:pl-[25px] xl:pr-6 md:overflow-y-auto">
             {invoicesSent.map((invoice) => (
               <TransactionsCard
                 key={invoice.id}

@@ -14,7 +14,7 @@ function InvestmentsCard({
   returnValue,
 }: InvestmentProps) {
   return (
-    <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full max-w-[635px] lg:mb-[15px] last:mb-0">
+    <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full max-w-[635px] lg:mb-[15px] last:mb-0">
       {/* LEFT SECTION */}
       <div className="flex items-center gap-3 w-full max-w-[220px] xl:max-w-[280px]">
         <Icon className="w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]" />

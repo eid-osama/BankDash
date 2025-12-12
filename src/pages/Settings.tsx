@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -10,7 +10,7 @@ import { Pencil } from "lucide-react";
 
 const Settings = () => {
   const [activeTab, setActiveTab] = useState("edit-profile");
-  const [profilePhoto, setProfilePhoto] = useState("/api/placeholder/90/90");
+  const [profilePhoto] = useState("/api/placeholder/90/90");
 
   // Edit Profile Formik
   const profileFormik = useFormik({
@@ -74,17 +74,17 @@ const Settings = () => {
     },
   });
 
-  const handleProfileSubmit = (e) => {
+  const handleProfileSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     profileFormik.handleSubmit();
   };
 
-  const handlePreferencesSubmit = (e) => {
+  const handlePreferencesSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     preferencesFormik.handleSubmit();
   };
 
-  const handleSecuritySubmit = (e) => {
+  const handleSecuritySubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     securityFormik.handleSubmit();
   };

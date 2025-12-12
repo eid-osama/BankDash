@@ -19,7 +19,7 @@ export default function DataTable({
 }: DataTableProps) {
   return (
     <div
-      className={`bg-white rounded-xl text-[12px] xl:text-[16px] py-[17px] pl-[10px] pr-[10px] xl:pt-[17px] xl:pb-[19px] xl:pl-[18px] xl:pr-[31px] shadow-sm ${className}`}
+      className={`bg-white rounded-xl text-[12px] xl:text-[16px] py-[17px] pl-2.5 pr-2.5 xl:pt-[17px] xl:pb-[19px] xl:pl-[18px] xl:pr-[31px] shadow-sm ${className}`}
     >
       <div className="overflow-x-auto">
         <table className="w-full">
@@ -28,7 +28,7 @@ export default function DataTable({
               {columns.map((column) => (
                 <th
                   key={column.key}
-                  className="text-left pb-[8px] px-4 font-medium text-[#718EBF]"
+                  className="text-left pb-2 px-4 font-medium text-[#718EBF]"
                 >
                   {column.label}
                 </th>
@@ -39,10 +39,7 @@ export default function DataTable({
             {data.map((row, index) => (
               <tr key={index} className=" hover:bg-gray-50">
                 {columns.map((column) => (
-                  <td
-                    key={column.key}
-                    className="py-[8px] px-[8px] xl:py-[14px] xl:px-4"
-                  >
+                  <td key={column.key} className="py-2 px-2 xl:py-3.5 xl:px-4">
                     {column.render
                       ? column.render(row[column.key], row)
                       : row[column.key]}

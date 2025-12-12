@@ -68,10 +68,10 @@ const recentTransactions = [
 
 function Dashboard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto gap-x-[25px] xl:gap-x-[30px] gap-y-[24px] 2xl:gap-[60px] 2xl:max-w-[1171px] 2xl:mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto gap-x-[25px] xl:gap-x-[30px] gap-y-6 2xl:gap-[60px] 2xl:max-w-[1171px] 2xl:mx-auto">
       {/* My Cards Section */}
       <div className="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:max-w-[730px] 2xl:max-w-[760px]">
-        <div className="flex justify-between items-center mb-[20px] h-[27px]">
+        <div className="flex justify-between items-center mb-5 h-[27px]">
           <CardsHeader>My Cards</CardsHeader>
           <CardsLink>See All</CardsLink>
         </div>
@@ -104,9 +104,9 @@ function Dashboard() {
 
       {/* Recent Transaction */}
       <div className="md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2">
-        <div className="flex flex-col gap-[20px] md:max-h-[282px]">
+        <div className="flex flex-col gap-5 md:max-h-[282px]">
           <CardsHeader>Recent Transaction</CardsHeader>
-          <div className="bg-white rounded-[25px] px-[15px] py-[18px] xl:py-[25px] xl:pl-[25px] xl:pr-[24px] md:overflow-y-auto">
+          <div className="bg-white rounded-[25px] px-[15px] py-[18px] xl:py-[25px] xl:pl-[25px] xl:pr-6 md:overflow-y-auto">
             {recentTransactions.map((transaction) => (
               <TransactionsCard
                 key={transaction.id}
@@ -120,7 +120,7 @@ function Dashboard() {
                 }
                 moneyValue={transaction.amount}
                 highlightAmount={true}
-                className="mb-[12px] xl:mb-[10px] last:mb-0"
+                className="mb-3 xl:mb-2.5 last:mb-0"
               />
             ))}
           </div>
@@ -147,9 +147,9 @@ function Dashboard() {
       </div>
 
       {/* Quick Transfer and Balance History */}
-      <div className="flex flex-col md:flex-row gap-y-[24px] md:gap-x-[30px] md:col-start-1 md:col-end-4 md:row-start-3 md:row-end-4">
+      <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-[30px] md:col-start-1 md:col-end-4 md:row-start-3 md:row-end-4">
         {/* Quick Transfer */}
-        <div className="flex flex-col gap-y-[18px] md:flex-shrink-0">
+        <div className="flex flex-col gap-y-[18px] md:shrink-0">
           <CardsHeader>Quick Transfer</CardsHeader>
           <QuickTransfer />
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import SummaryCard from "@/components/SummaryCard";
 import LineChartComponent from "@/components/LineChartComponent";
 import DataTable from "@/components/tables/DataTable";
@@ -89,7 +88,7 @@ function Investments() {
   ];
 
   return (
-    <div className="grid grid-cols-1 justify-between sm:grid-cols-4 auto-rows-auto gap-x-[25px] xxl:gap-x-[30px] gap-y-[24px] xxl:gap-[60px] xxl:max-w-[1171px] xxl:mx-auto">
+    <div className="grid grid-cols-1 justify-between sm:grid-cols-4 auto-rows-auto gap-x-[25px] xxl:gap-x-[30px] gap-y-6 xxl:gap-[60px] xxl:max-w-[1171px] xxl:mx-auto">
       {/* Summary Cards */}
       <div className="flex max-sm:flex-col max-sm:gap-y-[15px] justify-between flex-wrap md:gap-[25px] md:flex-nowrap col-span-4">
         <SummaryCard
@@ -114,7 +113,7 @@ function Investments() {
 
       {/* Investment Charts */}
       <div className="grid grid-cols-1 col-span-4 lg:grid-cols-10 gap-6">
-        <div className="flex flex-col gap-[20px] col-span-[5]">
+        <div className="flex flex-col gap-5 col-span-5">
           <CardsHeader>Yearly Total Investment</CardsHeader>
           <LineChartComponent
             data={yearlyInvestmentData}
@@ -124,7 +123,7 @@ function Investments() {
             color="#F59E0B"
           />
         </div>
-        <div className="flex flex-col gap-[20px] col-span-[5]">
+        <div className="flex flex-col gap-5 col-span-5">
           <CardsHeader>Monthly Revenue</CardsHeader>
           <LineChartComponent
             data={monthlyRevenueData}
