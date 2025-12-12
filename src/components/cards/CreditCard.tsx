@@ -51,9 +51,9 @@ export default function CreditCard({
 
         {/* Chip */}
         <div className="mb-6">
-          <div className="w-12 h-8 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-md flex items-center justify-center">
-            <div className="w-8 h-5 bg-gradient-to-r from-yellow-200 to-yellow-300 rounded-sm flex items-center justify-center">
-              <div className="w-6 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-sm"></div>
+          <div className="w-12 h-8 bg-linear-to-r from-yellow-300 to-yellow-400 rounded-md flex items-center justify-center">
+            <div className="w-8 h-5 bg-linear-to-r from-yellow-200 to-yellow-300 rounded-sm flex items-center justify-center">
+              <div className="w-6 h-3 bg-linear-to-r from-yellow-400 to-yellow-500 rounded-sm"></div>
             </div>
           </div>
         </div>

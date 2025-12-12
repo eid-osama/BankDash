@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   BarChart,
   Bar,
   XAxis,
-  YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
   Cell,
@@ -72,10 +70,10 @@ export default function BarChartComponent({
           <Bar
             dataKey={dataKey}
             radius={[4, 4, 0, 0]}
-            onMouseEnter={(data, index) => setHoveredIndex(index)}
+            onMouseEnter={(_data, index) => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            {data.map((entry, index) => (
+            {data.map((_entry, index) => (
               <Cell
                 key={`cell-${index}`}
                 fill={hoveredIndex === index ? "#16DBCC" : color}

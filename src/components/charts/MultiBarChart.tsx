@@ -40,7 +40,7 @@ export default function MultiBarChart({
   }));
 
   return (
-    <div className="pt-[28px] pb-[24px] pl-[33px] pr-[30px] bg-white rounded-[25px] border-gray-100">
+    <div className="pt-7 pb-6 pl-[33px] pr-[30px] bg-white rounded-[25px] border-gray-100">
       {(title || showTotalsInTitle) && (
         <div className="mb-4">
           {showTotalsInTitle ? (

@@ -1,7 +1,5 @@
-import React from "react";
 import SummaryCard from "@/components/SummaryCard";
 import DataTable from "@/components/tables/DataTable";
-import { UserRound } from "lucide-react";
 import {
   RoundBreifcase,
   RoundCustom,
@@ -9,41 +7,6 @@ import {
   RoundUser,
 } from "@/assets/icons";
 import CardsHeader from "@/components/CardsHeader";
-
-const loanTypes = [
-  {
-    id: 1,
-    name: "Personal Loans",
-    amount: "$50,000",
-    icon: "👤",
-    color: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    id: 2,
-    name: "Corporate Loans",
-    amount: "$100,000",
-    icon: "💼",
-    color: "bg-yellow-100",
-    iconColor: "text-yellow-600",
-  },
-  {
-    id: 3,
-    name: "Business Loans",
-    amount: "$500,000",
-    icon: "📊",
-    color: "bg-pink-100",
-    iconColor: "text-pink-600",
-  },
-  {
-    id: 4,
-    name: "Custom Loans",
-    amount: "Choose Money",
-    icon: "⚡",
-    color: "bg-teal-100",
-    iconColor: "text-teal-600",
-  },
-];
 
 const activeLoans = [
   {
@@ -113,20 +76,6 @@ const activeLoans = [
 ];
 
 function Loans() {
-  // Calculate totals
-  const totalLoanMoney = activeLoans.reduce(
-    (sum, loan) => sum + loan.loanMoney,
-    0
-  );
-  const totalLeftToRepay = activeLoans.reduce(
-    (sum, loan) => sum + loan.leftToRepay,
-    0
-  );
-  const totalInstallment = activeLoans.reduce(
-    (sum, loan) => sum + loan.installment,
-    0
-  );
-
   const loanColumns = [
     { key: "slNo", label: "SL No" },
     {
@@ -156,16 +105,6 @@ function Loans() {
       ),
     },
   ];
-
-  const totalRow = {
-    slNo: "Total",
-    loanMoney: totalLoanMoney,
-    leftToRepay: totalLeftToRepay,
-    duration: "-",
-    interestRate: "-",
-    installment: totalInstallment,
-    repay: "",
-  };
 
   return (
     <div className="grid grid-cols-1 justify-between sm:grid-cols-4 gap-x-[25px] xxl:gap-x-[30px] gap-y-[24px]  xxl:max-w-[1171px] xxl:mx-auto">

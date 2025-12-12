@@ -1,13 +1,12 @@
-import { Custom, Person, Stock, Briefcase, CreditCard } from "@/assets/icons";
-// import CreditCard from "./cards/CreditCard";
+import { Custom, Person, Stock, Briefcase } from "@/assets/icons";
 
 function BankServicesList() {
   return (
     <div>
-      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full  lg:mb-[15px] last:mb-0">
+      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full  lg:mb-[15px] last:mb-0">
         <div className="flex items-center gap-3 w-full max-w-[250px]">
           <div className=" flex justify-center items-center w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]">
-            <Person className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:!w-[70px] xxl:!h-[70px]" />
+            <Person className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:w-[70px]! xxl:h-[70px]!" />
           </div>
           <div className="flex flex-col">
             <p className="text-[14px] md:text-[12px] xl:text-[16px]">
@@ -42,10 +41,10 @@ function BankServicesList() {
           </button>
         </div>
       </div>
-      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full  lg:mb-[15px] last:mb-0">
+      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full  lg:mb-[15px] last:mb-0">
         <div className="flex items-center gap-3 w-full max-w-[250px]">
           <div className=" flex justify-center items-center w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]">
-            <Briefcase className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:!w-[70px] xxl:!h-[70px]" />
+            <Briefcase className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:w-[70px]! xxl:h-[70px]!" />
           </div>
           <div className="flex flex-col">
             <p className="text-[14px] md:text-[12px] xl:text-[16px]">
@@ -80,10 +79,10 @@ function BankServicesList() {
           </button>
         </div>
       </div>
-      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full  lg:mb-[15px] last:mb-0">
+      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full  lg:mb-[15px] last:mb-0">
         <div className="flex items-center gap-3 w-full max-w-[250px]">
           <div className=" flex justify-center items-center w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]">
-            <Stock className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:!w-[70px] xxl:!h-[70px]" />
+            <Stock className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:w-[70px]! xxl:h-[70px]!" />
           </div>
           <div className="flex flex-col">
             <p className="text-[14px] md:text-[12px] xl:text-[16px]">
@@ -118,10 +117,10 @@ function BankServicesList() {
           </button>
         </div>
       </div>
-      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full  lg:mb-[15px] last:mb-0">
+      <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full  lg:mb-[15px] last:mb-0">
         <div className="flex items-center gap-3 w-full max-w-[250px]">
           <div className=" flex justify-center items-center w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]">
-            <Custom className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:!w-[70px] xxl:!h-[70px]" />
+            <Custom className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] xxl:w-[70px]! xxl:h-[70px]!" />
           </div>
           <div className="flex flex-col">
             <p className="text-[14px] md:text-[12px] xl:text-[16px]">

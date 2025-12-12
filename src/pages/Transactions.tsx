@@ -4,7 +4,6 @@ import CardsHeader from "@/components/CardsHeader";
 import CardsLink from "@/components/CardsLink";
 import TabsComponent from "@/components/TabsComponent";
 import TableComponent from "@/components/TableComponent";
-import { Pagination } from "swiper/modules";
 import PaginationComponent from "@/components/PaginationComponent";
 
 // Sample data for expense chart
@@ -66,45 +65,6 @@ const transactions = [
 ];
 
 function Transactions() {
-  const transactionColumns = [
-    {
-      key: "description",
-      label: "Description",
-      render: (value: any, row: any) => (
-        <div className="flex items-center gap-3">
-          <span className="text-lg">{row.icon}</span>
-          <span className="font-medium text-gray-800">{value}</span>
-        </div>
-      ),
-    },
-    { key: "transactionId", label: "Transaction ID" },
-    { key: "type", label: "Type" },
-    { key: "card", label: "Card" },
-    { key: "date", label: "Date" },
-    {
-      key: "amount",
-      label: "Amount",
-      render: (value: number) => (
-        <span
-          className={`font-semibold ${
-            value > 0 ? "text-green-500" : "text-red-500"
-          }`}
-        >
-          {value > 0 ? "+" : ""}${Math.abs(value).toLocaleString()}
-        </span>
-      ),
-    },
-    {
-      key: "receipt",
-      label: "Receipt",
-      render: () => (
-        <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
-          Download
-        </button>
-      ),
-    },
-  ];
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto gap-x-[25px] xl:gap-x-[30px] gap-y-[24px] 2xl:gap-[60px] 2xl:max-w-[1171px] 2xl:mx-auto">
       {/* My Cards and My Expense Row */}

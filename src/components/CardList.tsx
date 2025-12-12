@@ -14,10 +14,10 @@ function CardList({
   cardNumber,
 }: CardListProps) {
   return (
-    <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-[10px] w-full  lg:mb-[15px] last:mb-0">
+    <div className="bg-white rounded-[20px] p-[15px] flex justify-between items-center mb-2.5 w-full  lg:mb-[15px] last:mb-0">
       <div className="flex items-center gap-3 ">
         <div className=" flex justify-center items-center w-[45px] h-[45px] xl:w-[60px] xl:h-[60px]">
-          <Icon className="w-[20px] h-[20px] xl:w-[26px] xl:h-[26px]" />
+          <Icon className="w-5 h-5 xl:w-[26px] xl:h-[26px]" />
         </div>
         <div className="flex flex-col">
           <p className="text-[14px] md:text-[12px] xl:text-[16px]">Card Type</p>

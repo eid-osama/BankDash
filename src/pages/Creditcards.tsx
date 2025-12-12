@@ -1,6 +1,4 @@
-import React from "react";
 import { CreditCard } from "@/assets/icons";
-import DataTable from "@/components/tables/DataTable";
 import CardsHeader from "@/components/CardsHeader";
 import MyCards from "@/components/MyCards";
 import ExpenseStatistics from "@/components/ExpenseStat";
@@ -40,44 +38,6 @@ const cardList = [
     cardNumber: "**** **** 7560",
     name: "Edward",
     icon: CreditCard,
-  },
-];
-
-const cardSettings = [
-  {
-    id: 1,
-    title: "Block Card",
-    description: "Instantly block your card",
-    icon: "💳",
-    color: "text-yellow-500",
-  },
-  {
-    id: 2,
-    title: "Change Pin Code",
-    description: "Choose another pin code",
-    icon: "🔒",
-    color: "text-purple-500",
-  },
-  {
-    id: 3,
-    title: "Add to Google Pay",
-    description: "Withdraw without any card",
-    icon: "🔵",
-    color: "text-red-500",
-  },
-  {
-    id: 4,
-    title: "Add to Apple Pay",
-    description: "Withdraw without any card",
-    icon: "🍎",
-    color: "text-green-500",
-  },
-  {
-    id: 5,
-    title: "Add to Apple Store",
-    description: "Withdraw without any card",
-    icon: "🍎",
-    color: "text-blue-400",
   },
 ];
 

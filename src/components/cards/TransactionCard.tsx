@@ -1,7 +1,4 @@
-import React from "react";
-
 interface TransactionCardProps {
-  id: number;
   description: string;
   date: string;
   type?: string;
@@ -14,7 +11,6 @@ interface TransactionCardProps {
 }
 
 export default function TransactionCard({
-  id,
   description,
   date,
   type,

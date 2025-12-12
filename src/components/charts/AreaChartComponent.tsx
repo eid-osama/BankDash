@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AreaChart,
   Area,
@@ -28,7 +27,7 @@ export default function AreaChartComponent({
   fillOpacity = 0.1,
 }: AreaChartComponentProps) {
   return (
-    <div className="bg-white rounded-2xl pb-[15px]  pr-[25px] pt-[20px] h-[276px] border-gray-100">
+    <div className="bg-white rounded-2xl pb-[15px]  pr-[25px] pt-5 h-[276px] border-gray-100">
       <ResponsiveContainer width="100%">
         <AreaChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />

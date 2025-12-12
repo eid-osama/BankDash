@@ -2,7 +2,6 @@ import { DownArrowCircle, UpArrowCircle } from "@/assets/icons";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
