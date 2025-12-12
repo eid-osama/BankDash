@@ -2,7 +2,7 @@ import Accounts from "./Accounts.svg?react";
 import CreditCard from "./creditCard.svg?react";
 import Dashboard from "./Dashboard.svg?react";
 import Investment from "./Investment.svg?react";
-import Loan from "./Loan.svg?react";
+import Loan from "./loan.svg?react";
 import Services from "./services.svg?react";
 import Settings from "./Settings.svg?react";
 import Transfer from "./transfer.svg?react";
